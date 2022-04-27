@@ -9,3 +9,7 @@ echo 'export PS1="[%1d]$ "' >> ~/.zshrc
 
 git config --global user.name $GIT_USER
 git config --global user.email $GIT_EMAIL
+
+
+code --install-extension matklad.rust-analyzer
+
