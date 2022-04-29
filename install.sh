@@ -17,4 +17,4 @@ sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.
 echo "alias gs='git status'" >> $HOME/.zshrc
 
 git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
-sed -i 's/plugins=(git)/plugins=(git z rust jump zsh-autosuggestions dirhistory)/' $HOME/.zshrc
+sed -i 's/plugins=(git)/plugins=(git z jump zsh-autosuggestions dirhistory)/' $HOME/.zshrc
