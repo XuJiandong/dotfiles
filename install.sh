@@ -15,3 +15,6 @@ code --install-extension matklad.rust-analyzer
 
 sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)";
 echo "alias gs='git status'" >> $HOME/.zshrc
+
+git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
+sed -i 's/plugins=(git)/plugins=(git z rust jump zsh-autosuggestions dirhistory)/' $HOME/.zshrc
